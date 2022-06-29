@@ -3,19 +3,16 @@ import TextTransition,{presets} from "react-text-transition"
 import { useState } from "react"
 import styled from "styled-components"
 import { useEffect } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faFaceAngry } from "@fortawesome/free-solid-svg-icons"
-import { faFacebook, faFacebookF, faGithub, faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 
 const H3 = styled.h3`
-    color: var(--heading);
+    color: var(--orange);
     font-family: var(--font);
     font-size: 2rem;
     text-align: left;
 `
 const H1 = styled.h1`
     color: var(--accent-color);
-    font-size: 8rem;
+    font-size: 7rem;
     margin-top: 2rem;
 
 `
@@ -23,7 +20,6 @@ const H2= styled.h2`
     color: var(--green);
     font-size: 3rem;
     font-weight: 500;
-    margin-top: 2rem;
     text-align: left;
 `
 const TEXTS = [
@@ -37,6 +33,12 @@ const TEXTS = [
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    margin-top: 1rem;
+    .icon{
+      img{
+        width: 2.3rem;
+      }
+    }
   `
   const Link = styled.a`
     text-decoration: none;
@@ -67,9 +69,9 @@ const Home = () => {
         also passionate about educating and improving the community around me.
       </Sect>
       <Div >
-       <Link href="#" target="_blank" className="icon"> <FontAwesomeIcon icon={faFacebookF} /></Link>
-       <Link href="#" target="_blank" className="icon"><FontAwesomeIcon icon={faGithubAlt} /></Link>
-       <Link href="#" target="_blank" className="icon"><FontAwesomeIcon icon={faEnvelope} /></Link>
+       <Link href="#" target="_blank" className="icon"><img src="https://img.icons8.com/dotty/80/FA7453/facebook-f.png"/></Link>
+       <Link href="#" target="_blank" className="icon"><img src="https://img.icons8.com/wired/80/FFB964/github.png"/> </Link>
+       <Link href="#" target="_blank" className="icon"><img src="https://img.icons8.com/dotty/80/66e2dc/new-post.png"/></Link>
       </Div>
       </div> 
       </Flex>

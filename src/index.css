@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
 :root {
-	--green: #41bb31;
+	--green: #66E2DC;
+	--orange: #FA7453;
 	--white: #ffffff;
-	--bg: #1d1b19;
+	--bg: #191826;
 	--heading : #DDDDDD;
 	--p-color: #888;
-	--accent-color: #aa7739;
+	--accent-color: #FFB964;
 	--font: 'Jost';
   }
 html, body, div, span, applet, object, iframe,
