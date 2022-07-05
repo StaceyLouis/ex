@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import logo from '../assets/images/profile.png'
+import logo from '../assets/images/image.png'
 import {FontAwesomeIcon}  from '@fortawesome/react-fontawesome'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
-
+import Title from '../subComponents/Title'
 
 const Container = styled.div`
     height: 100vh;
@@ -17,12 +17,19 @@ font-family: (--font);
     margin-top: 2rem;
     display: flex;
     flex-flow: row nowrap;
-    div{
+    .img{
+        width: 50%;
+        img{
+            box-shadow: 0 0 20px 20px #191826 inset;
+        }
+    }
+    .content{
+        margin-top: 3rem;
         width: 40%;
     }
     h2{
         font-size: 3rem;
-        color: var(--accent-color);
+        color: var(--pink);
         text-align: left;
         font-weight: bold;
 
@@ -38,14 +45,14 @@ font-family: (--font);
     h3{
         text-align: left;
         font-size: 2rem;
-        color: var(--accent-color);
+        color: var(--orange);
         margin: 1rem;
         font-weight: bold;
     }
     p{
         font-size: 1.1rem;
         text-align: left;
-        color: var(--heading);
+        color: var(--accent-color);
         line-height: 1.6rem;
     }
     hr{
@@ -64,9 +71,7 @@ font-family: (--font);
         }
     }
 `
-const  Title= styled.h1`
-    color: var(--green);
-`
+
 const Button = styled.button`
     display: block;
     background: transparent;
@@ -87,12 +92,12 @@ const Button = styled.button`
 const About = () => {
   return (
     <Container>
-        <Title>About Me</Title>
+        <Title text="About Me"/>
         <Flex>
-        <div>
-            <img src={logo} alt="profile-photo" style={{width:300}}/>
+        <div className="img">
+            <img src={logo} alt="profile-photo" style={{width: "30rem"}}/>
         </div>
-        <div>
+        <div className="content">
         <h2>I'm Stacey Louis</h2>
         <h4>Full Stack Developer | MERN Stack Instructor</h4>
         <p> I design and develop services for customers specializing creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through meaningful interactions. Check out my Portfolio</p>

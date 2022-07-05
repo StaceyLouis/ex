@@ -8,6 +8,7 @@ export const Container = styled.section`
     background-color: var(--bg);
     font-family: var(--font);
     color: var(--font);
+    
 `
 export const Flex = styled.div`
     height: 100vh;
@@ -16,11 +17,11 @@ export const Flex = styled.div`
     justify-center: center;
     align-items: center;
     align-content: center;
-    margin-left: 4rem;
-    width: 92vw;
+    margin-left: 15rem;
+    max-width: 92vw;
 `
 export const Sect = styled.p`
-    color: var(--p-color);
+    color: #ccc;
     width: 49%;
     font-size: 2rem;
     text-align: left;

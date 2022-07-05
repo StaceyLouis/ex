@@ -1,0 +1,39 @@
+#mySidenav a {
+    position: absolute;
+    left: -90px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: "Jost";
+    border-radius: 0 5px 5px 0;
+  }
+  .left{
+    margin-left: 8rem;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #about {
+    top: 20px;
+    background-color: #66e2dc;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: var(--orange);
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #fa5386;
+  }

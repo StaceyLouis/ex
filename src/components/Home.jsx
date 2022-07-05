@@ -3,6 +3,7 @@ import TextTransition,{presets} from "react-text-transition"
 import { useState } from "react"
 import styled from "styled-components"
 import { useEffect } from "react"
+import gif from '../assets/images/icons8-linkedin.gif'
 
 const H3 = styled.h3`
     color: var(--orange);
@@ -69,9 +70,10 @@ const Home = () => {
         also passionate about educating and improving the community around me.
       </Sect>
       <Div >
-       <Link href="#" target="_blank" className="icon"><img src="https://img.icons8.com/dotty/80/FA7453/facebook-f.png"/></Link>
-       <Link href="#" target="_blank" className="icon"><img src="https://img.icons8.com/wired/80/FFB964/github.png"/> </Link>
-       <Link href="#" target="_blank" className="icon"><img src="https://img.icons8.com/dotty/80/66e2dc/new-post.png"/></Link>
+       <Link href="https://www.facebook.com/shtaceyologie/" target="_blank" className="icon"><img src="https://img.icons8.com/dotty/80/FA7453/facebook-f.png"/></Link>
+       <Link href="h0ttps://github.com/StaceyLouis" target="_blank" className="icon"><img src="https://img.icons8.com/wired/80/FFB964/github.png"/> </Link>
+       <Link href="mailto:staceylouis@icloud.com" target="_blank" className="icon"><img src="https://img.icons8.com/dotty/80/66e2dc/new-post.png"/></Link>
+       <Link to="http://www.linkedin/staceylouis" target='_blank' className="icon"><img src="https://img.icons8.com/wired/64/fa5386/linkedin--v2.png"/></Link>
       </Div>
       </div> 
       </Flex>
