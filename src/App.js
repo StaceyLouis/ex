@@ -6,13 +6,19 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import Projects from './components/Projects'
+import MobileHome from './mobile/MobileHome';
+import { Desktop, Mobile } from './styles/Media';
 
 function App() {
   return (
     <div className="App">
     
      <Routes>
-      <Route path='/' element={ <Home />}/>
+      <Route path='/' element={
+      <>
+      <Desktop><Home /></Desktop>
+      <Mobile><MobileHome/></Mobile></> 
+    }/>
       <Route path='/about' element={<About />}/>
       <Route path='/projects' element={<Projects />}/>
       <Route path='/contact' element={ <Contact/>}/>
