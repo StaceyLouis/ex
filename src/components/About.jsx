@@ -3,6 +3,8 @@ import logo from '../assets/images/image.png'
 import {FontAwesomeIcon}  from '@fortawesome/react-fontawesome'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 import Title from '../subComponents/Title'
+import '../styles/about.scss'
+import ReactSkillbar from "react-skillbars"
 
 const Container = styled.div`
     height: 100vh;
@@ -31,12 +33,12 @@ font-family: (--font);
         font-size: 3rem;
         color: var(--pink);
         text-align: left;
-        font-weight: bold;
+      
 
     }
     h4{
         font-size: 1.1rem;
-        font-weight: bold;
+       
         text-align: left;
         margin: 1rem 0;
         color: var(--green);
@@ -46,8 +48,8 @@ font-family: (--font);
         text-align: left;
         font-size: 2rem;
         color: var(--orange);
-        margin: 1rem;
-        font-weight: bold;
+        margin: 0.2rem 0;
+    
     }
     p{
         font-size: 1.1rem;
@@ -62,12 +64,13 @@ font-family: (--font);
     ul{
         display: flex;
         flex-flow: row wrap;
+    
         li{
             color: var(--heading);
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin: 1rem;
             line-height: 2rem;
-            list-style-type: square;
+            list-style-type: none;
         }
     }
 `
@@ -95,7 +98,7 @@ const About = () => {
         <Title text="About Me"/>
         <Flex>
         <div className="img">
-            <img src={logo} alt="profile-photo" style={{width: "30rem"}}/>
+            <img src={logo} alt="profile-photo" style={{width: "20rem"}}/>
         </div>
         <div className="content">
         <h2>I'm Stacey Louis</h2>
@@ -107,18 +110,16 @@ const About = () => {
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>MongoDB</li>
+                <li>Node</li>
+                <li>Framer Motion</li>
+                <li>MySQL</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>OOP</li>
+               
 
             </ul>
         

@@ -11,7 +11,7 @@ font-size: 2rem;
 const Title = (props) => {
   return (
     <div>
-    <H1>{props.text}</H1>
+    <H1>__{props.text}</H1>
     </div>
   )
 }

@@ -4,74 +4,51 @@ import styled from "styled-components"
 import {  FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
+import Title from '../subComponents/Title'
+import '../styles/proj.scss'
 
-const Container = styled.div`
-min-width: 100vw;
-min-height: 100vh;
-max-width: 100%;
-max-height: 100vh;
+
+
+const Polaroid = styled.div`
+width: 18rem;
 background-color: var(--bg);
-font-family: var(--font);
-color: var(--font);
-display: flex;
-align-items: center;
-
-h2{
-  color: var(--heading);
-  font-size: 2rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin: 1rem;
+margin-bottom: 25px;
+border-radius: 0.2rem;
+text-align: left;
+span{
+  color: var(--p-color);
 }
- p{
-  color: var(--heading);
-  height: 3rem;
- }
- button{
-  margin: 0.5rem;
-  background-color: transparent;
-  border: none;
-
-  .icon{
-    color: var(--p-color);
-    font-size: 2rem;
-  }
-
- }
 `
 
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  color: var(--font);
-`
-const Img = styled.img`
-  width: 17rem;
-  height: 12rem;
-  object-fit: cover;
-`
 const Projects = () => {
     const [projects] = useState(data)
 
     const list= projects.map((i)=>{
         return(
-            <div key={i.id}>
-                <Img src={i.img}/>
-                <br/>
-                <h2>{i.title}</h2>
-                <p>{i.desc}</p>
-                <button><FontAwesomeIcon icon={faGithubAlt} className="icon"/></button> <button><FontAwesomeIcon icon={faUpRightFromSquare} className="icon" /></button>
+          <div className="container" key={i.id}>
+            <img src={i.img} alt={i.title} />
+            <div className="overlay">
+              <h2>{i.title}</h2>
+              <p>{i.desc}</p>
+              <span>{i.tech}</span>
+              <span><a href={i.repo} target="_blank"><FontAwesomeIcon icon={faGithubAlt} className="icon"/></a><a href={i.url} target="_blank"><FontAwesomeIcon icon={faUpRightFromSquare} className="icon icon1"/></a></span>
+           
+
+            </div>
             </div>
         )
     })
   return (
 
-        <Container>
-     <h1>
-      Projects
-     </h1>
-      <Flex>
-        {list}
-      </Flex>
-        </Container>
+        <div className="main">
+          <Title text="Projects"/>
+          <div className="flex">
+          {list}
+          </div>
+            
+        </div>
 
   )
 }

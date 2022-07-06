@@ -1,0 +1,8 @@
+@import "~@fortawesome/fontawesome-svg-core/styles.css";
+
+li::before{
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09a";
+    margin: 0 5px 0 -15px;
+    color: rgb(203, 216, 20);
+}

@@ -4,7 +4,7 @@ import { useState } from "react"
 import styled from "styled-components"
 import { useEffect } from "react"
 import gif from '../assets/images/icons8-linkedin.gif'
-
+import '../styles/mobileHome.css'
 const H3 = styled.h3`
     color: var(--orange);
     font-family: var(--font);

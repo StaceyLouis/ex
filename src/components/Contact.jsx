@@ -14,7 +14,7 @@ const Container = styled.div`
   h2{
     color: var(--heading);
     margin: 1rem;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: left;
     margin-left: 9rem;
   }
@@ -30,8 +30,8 @@ h3{
 p{
   width: 60%;
   margin: auto;
-  font-size: 1.5rem;
-  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
 }
 `
 const Button = styled.button`
@@ -57,29 +57,37 @@ const Form = styled.form`
       margin: 0.3rem;
       border: 0.1rem solid var(--pink);
       width: 100%;
-      height: 3rem;
+      height: 2rem;
       color: white;
-      font-size: 1.5rem;
-
+      font-size: 1.2rem;
+      padding: 1rem;
+      font-family: var(--font);
+      &:focus{
+        outline:none;
+      }
     }
     #email{
       border: 0.1rem solid var(--orange);
     }
     .input{
       border: 0.1rem solid var(--green);
-      width: 47%;
       display: inline;
       color: white;
-      font-size: 2rem;
+      font-size: 1.2rem;
+      font-family: var(--font);
     }
    textarea{
+    padding: 1rem;
     background: transparent;
     border: 0.1rem solid var(--orange);
     width: 100%;
     height: 10rem;
     margin: 0.3rem;
     color: white;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    &:focus{
+      outline:none;
+    }
    }
    button{
     background: var(--orange);
