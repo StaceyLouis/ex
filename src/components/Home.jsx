@@ -4,6 +4,7 @@ import { useState } from "react"
 import styled from "styled-components"
 import { useEffect } from "react"
 import gif from '../assets/images/icons8-linkedin.gif'
+import Nav from "./Nav"
 
 const H3 = styled.h3`
     color: var(--orange);
@@ -61,6 +62,7 @@ const Home = () => {
 
   return (
     <Container>
+      <Nav />
         <Flex>
         <div>
     <H3>Hi! I'm Stacey</H3>
