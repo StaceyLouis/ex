@@ -7,7 +7,9 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import Projects from './components/Projects'
 import MobileAbout from './mobile/MobileAbout';
+import MobileContact from './mobile/MobileContact';
 import MobileHome from './mobile/MobileHome'
+import MobileProjects from './mobile/MobileProjects';
 import { Desktop, Mobile } from './styles/Media';
 
 function App() {
@@ -26,8 +28,19 @@ function App() {
       <Mobile><MobileAbout /></Mobile>
       </>
       }/>
-      <Route path='/projects' element={<Projects />}/>
-      <Route path='/contact' element={ <Contact/>}/>
+      <Route path='/projects' element={
+        <>
+        <Mobile><MobileProjects /></Mobile>
+        <Desktop><Projects/></Desktop>
+        </>
+      
+      }/>
+      <Route path='/contact' element={ 
+         <>
+         <Mobile><MobileContact /></Mobile>
+         <Desktop><Contact/></Desktop>
+         </>
+      }/>
       
       </Routes>
       

@@ -24,7 +24,7 @@ const data= [
 },
         {
             id: 2,
-            title: "React Shopping Cart",
+            title: "Shopping Cart",
             desc: "A small store and shopping cart using the fake store api, axios and react-use-cart",
             url: "https://react-cart-shopping.netlify.app/",
             img: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -35,7 +35,7 @@ const data= [
             },
             {
                 id: 3,
-                title: "Nasa Photo of the Day",
+                title: "Nasa Photo",
                 desc: "A small store and shopping cart using the fake store api, axios and react-use-cart",
                 url: "https://nasa-apods.netlify.app/",
                 img: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",

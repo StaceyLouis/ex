@@ -90,7 +90,8 @@ const Button = styled.button`
 const MobileAbout = () => {
   return (
     <Container>
-    <Title text="About Me"/>
+        <MobileNav />
+        <Title text="About Me"/>
     <Flex>
     <div className="img">
         <img src={logo} alt="profile-photo" style={{width: "5rem"}}/>
