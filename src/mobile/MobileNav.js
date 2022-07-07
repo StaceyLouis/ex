@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Sidebar from 'react-sidebar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faAddressCard, faHome, faUserNinja, faBarsProgress} from '@fortawesome/free-solid-svg-icons'
+import {faAddressCard, faHome, faUserNinja, faBarsProgress, faBars} from '@fortawesome/free-solid-svg-icons'
 
 
 const Div = styled.div`
@@ -23,6 +23,7 @@ const Div = styled.div`
     text-decoration: none;
     padding: 1rem;
   }
+
 `
 
 const MobileNav = () => {
@@ -46,9 +47,8 @@ const MobileNav = () => {
     onSetOpen={setBar}
     styles={{ sidebar: { background: "var(--orange)" } }}>
 
- <button onClick={() => setBar(true)}>
-          Open sidebar
-        </button>
+ <FontAwesomeIcon icon={faBars} onClick={() => setBar(true)} style={{fontSize: "2rem", marginleft: "7rem", textAlign: "left"}} />
+        
  </Sidebar>
   )
 }
