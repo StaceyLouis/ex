@@ -62,7 +62,7 @@ const data = [
         repo: "https://github.com/StaceyLouis/ex",
         img: "https://res.cloudinary.com/staseface/image/upload/c_scale,w_400/v1657220801/about_d15f2k.png",
         url: 'https://www.staceylouis.com/',
-        tech: ["#React", "  ", "#SASS", "  ", "#styled-a"],
+        tech: ["#React", "  ", "#SASS", "  ", "#styled-components"],
         react: "React"
 
     }

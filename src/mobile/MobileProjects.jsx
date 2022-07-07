@@ -35,7 +35,7 @@ const slideImages = [
         url: "https://react-cart-shopping.netlify.app/",
         img: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         repo: 'https://github.com/StaceyLouis/react-shopping',
-        tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+        tech: [ "#Axios", "react-shopping-cart"],
         react: "React"
   },
   {
@@ -44,7 +44,7 @@ const slideImages = [
     url: "https://nasa-apods.netlify.app/",
     img: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     repo: 'https://github.com/StaceyLouis/nasa-apod',
-    tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+    tech: ["#React", "  ", "#NASA API", "  "],
     react: "React"
   },
   {
@@ -62,7 +62,7 @@ const slideImages = [
     repo: "https://github.com/StaceyLouis/ex",
     img: "https://res.cloudinary.com/staseface/image/upload/v1657220540/about_d15f2k.png",
     url: 'https://www.staceylouis.com/',
-    tech: ["#React", "  ", "#SASS", "  ", "#styled-a"],
+    tech: ["#React", "  ", "#SASS", "  ", "#styled-components"],
     react: "React"
   }
 
