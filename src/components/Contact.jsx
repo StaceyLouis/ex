@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Title from "../subComponents/Title"
 import { useRef } from "react"
 import emailjs from '@emailjs/browser'
+import Nav from "./Nav"
 
 const Container = styled.div`
   height: 100vh;
@@ -116,6 +117,7 @@ const Contact = () => {
   }
   return (
     <Container>
+      <Nav/>
       <Title text="Contact" />
             <h2>Get In Touch</h2>
             <p>If you have any questions, project ideas or you want to say “hello”, please fill out the form below and I will reply you shortly.</p>

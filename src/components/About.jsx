@@ -5,6 +5,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 import Title from '../subComponents/Title'
 import '../styles/about.scss'
 import ReactSkillbar from "react-skillbars"
+import Nav from "./Nav"
 
 const Container = styled.div`
     height: 100vh;
@@ -95,6 +96,7 @@ const Button = styled.button`
 const About = () => {
   return (
     <Container>
+        <Nav />
         <Title text="About Me"/>
         <Flex>
         <div className="img">

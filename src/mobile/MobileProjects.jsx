@@ -7,7 +7,31 @@ import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 import Title from '../subComponents/Title'
 import '../styles/proj.scss'
 import MobileNav from "./MobileNav"
+import { Slide,Fade } from 'react-slideshow-image';
 
+const slideImages = [
+  {
+    url: 'https://images.unsplash.com/photo-1432250767374-ee19cba37b52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1017&q=80',
+    caption: 'Slide 1'
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1514782831304-632d84503f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
+    caption: 'Slide 2'
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    caption: 'Slide 3'
+  },
+  {
+    url:"https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    caption:"Slide 4"
+  },
+  {
+    url:"https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
+    caption: "Slide 5"
+  }
+
+];
 
 const Link = styled.a`
 text-decoration: none;
@@ -44,6 +68,15 @@ margin-top: 4rem;
   }
 }
 `
+const Frame = styled.div`
+width: 90vw;
+margin: auto;
+  height: 30rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+`
 
 
 const MobileProjects = () => {
@@ -68,10 +101,15 @@ const MobileProjects = () => {
         <div className="main">
           <MobileNav/>
           <Title text="Projects"/>
-         
-          <div className="flex mobile-flex">
-          {list}
-          </div>
+         <Fade>
+         {slideImages.map((slideImage, index)=> (
+            <div className="each-fade" key={index}>
+              <Frame style={{'backgroundImage': `url(${slideImage.url})`}}>
+                <span>{slideImage.caption}</span>
+              </Frame>
+            </div>
+          ))} 
+          </Fade> 
           <Div >
        <Link href="https://www.facebook.com/shtaceyologie/" target="_blank" className="icon"><img src="https://img.icons8.com/ios-filled/50/FA7453/facebook-f.png"/></Link>
        <Link href="h0ttps://github.com/StaceyLouis" target="_blank" className="icon"><img src="https://img.icons8.com/ios-filled/50/FFB964/github.png"/></Link>

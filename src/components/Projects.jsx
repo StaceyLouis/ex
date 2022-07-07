@@ -6,6 +6,7 @@ import {faUpRightFromSquare} from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 import Title from '../subComponents/Title'
 import '../styles/proj.scss'
+import Nav from "./Nav"
 
 
 
@@ -43,6 +44,7 @@ const Projects = () => {
   return (
 
         <div className="main">
+          <Nav />
           <Title text="Projects"/>
           <div className="flex">
           {list}
