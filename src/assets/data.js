@@ -51,18 +51,18 @@ const data = [
         url: "https://calc-apps.netlify.app/",
         img: "https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
         repo: 'https://github.com/StaceyLouis/calculator',
-        tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+        tech: ["#React", "  ", "#Javascript", "  ", "#Axios"],
         react: "React"
 
     },
     {
         id: 5,
-        title: "Calculator",
-        desc: "A small store and shopping cart using the fake store api, axios and react-use-cart",
-        url: "https://calc-apps.netlify.app/",
-        img: "https://res.cloudinary.com/staseface/image/upload/v1656050749/shopping_tle99i.png",
-        repo: 'https://github.com/StaceyLouis/calculator',
-        tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+        title: "Portfolio",
+        desc: "Portfolio built with React",
+        repo: "https://github.com/StaceyLouis/ex",
+        img: "https://res.cloudinary.com/staseface/image/upload/c_scale,w_400/v1657220801/about_d15f2k.png",
+        url: 'https://www.staceylouis.com/',
+        tech: ["#React", "  ", "#SASS", "  ", "#styled-a"],
         react: "React"
 
     }

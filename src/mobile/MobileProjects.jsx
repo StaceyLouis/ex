@@ -55,6 +55,15 @@ const slideImages = [
     repo: 'https://github.com/StaceyLouis/calculator',
     tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
     react: "React"
+  },
+  {
+    title: "Portfolio",
+    desc: "Portfolio built with React",
+    repo: "https://github.com/StaceyLouis/ex",
+    img: "https://res.cloudinary.com/staseface/image/upload/v1657220540/about_d15f2k.png",
+    url: 'https://www.staceylouis.com/',
+    tech: ["#React", "  ", "#SASS", "  ", "#styled-a"],
+    react: "React"
   }
 
 ];
