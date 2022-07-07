@@ -9,7 +9,6 @@ import Nav from "./Nav"
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: var(--bg);
   font-family: var(--font);
  
   h2{

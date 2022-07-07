@@ -40,6 +40,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-image: url('./assets/images/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 ol, ul {
 	list-style: none;

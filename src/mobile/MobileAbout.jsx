@@ -110,7 +110,9 @@ const MobileAbout = () => {
     <div className="content">
     <h2>I'm Stacey Louis</h2>
     <h4>Full Stack Developer | MERN Stack Instructor</h4>
-    <p> I design and develop services for customers specializing creating stylish, modern websites, web services and online stores. </p>
+    <p>I  spend my day coding React and Javascript. I love learning new technologies and implementing them into new projects.
+        <span style={{color: "var(--green)"}}>I build with excitement, flexibility and a quick turn around.</span>
+    </p>
     <hr/>
         <h3>Skills</h3>
     <Skillbar skills={skills} colors = {{

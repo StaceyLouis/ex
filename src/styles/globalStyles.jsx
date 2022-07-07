@@ -5,7 +5,6 @@ export const Container = styled.section`
     min-height: 100vh;
     max-width: 100%;
     max-height: 100vh;
-    background-color: var(--bg);
     font-family: var(--font);
     color: var(--font);
     
