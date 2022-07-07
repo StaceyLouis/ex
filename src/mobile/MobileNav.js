@@ -57,7 +57,7 @@ const MobileNav = () => {
     <Link to="/about" ><FontAwesomeIcon icon={faUserNinja} /> About</Link>
     <Link to="/projects"><FontAwesomeIcon icon={faBarsProgress}/> Projects</Link>
     <Link to='/contact' ><FontAwesomeIcon icon={faAddressCard} /> Contact</Link>
-    <Button><FontAwesomeIcon icon={faFileDownload}/> Resume</Button>
+    <Button><a href='https://docs.google.com/document/d/1cJHzsbkFGgoLiy28SD8_phap-cW4ONm-/edit?usp=sharing&ouid=112986666847973219939&rtpof=true&sd=true' target="_blank"><FontAwesomeIcon icon={faFileDownload}/> Resume</a></Button>
      </Div>
     
     }

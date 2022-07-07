@@ -1,5 +1,6 @@
 
 import { Route, Routes } from 'react-router';
+import { ThemeProvider } from 'styled-components';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -14,6 +15,7 @@ import { Desktop, Mobile } from './styles/Media';
 
 function App() {
   return (
+    <ThemeProvider >
     <div className="App">
     
      <Routes>
@@ -47,6 +49,8 @@ function App() {
      
      
     </div>
+
+    </ThemeProvider>
   );
 }
 
