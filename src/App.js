@@ -15,7 +15,7 @@ import { Desktop, Mobile } from './styles/Media';
 
 function App() {
   return (
-    <ThemeProvider >
+  
     <div className="App">
     
      <Routes>
@@ -50,7 +50,7 @@ function App() {
      
     </div>
 
-    </ThemeProvider>
+   
   );
 }
 
