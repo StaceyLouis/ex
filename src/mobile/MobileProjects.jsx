@@ -11,24 +11,50 @@ import { Slide,Fade } from 'react-slideshow-image';
 
 const slideImages = [
   {
-    url: 'https://images.unsplash.com/photo-1432250767374-ee19cba37b52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1017&q=80',
-    caption: 'Slide 1'
+    title: "Kanye Rest",
+    desc: "This simple React site uses axios and the kanye rest api to display random Kanye West quotes",
+    url: 'https://kanye-rest-quote.netlify.app/',
+    img: "https://images.unsplash.com/photo-1432250767374-ee19cba37b52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1017&q=80",
+    repo: 'https://github.com/StaceyLouis/kanye-rest',
+    tech: ["#React", "  ", "#API", "  ", "#Axios"],
+    react: "React"
   },
   {
-    url: 'https://images.unsplash.com/photo-1514782831304-632d84503f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
-    caption: 'Slide 2'
+    title: "React To-do List",
+    desc: "Todo list site with full CRUD ",
+    url: 'https://todo-tasking.netlify.app/',
+    img: "https://images.unsplash.com/photo-1514782831304-632d84503f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+    repo: "https://github.com/StaceyLouis/React-Todo/tree/stacey-louis",
+
+    tech: ["#React-Router", "  ", "#CRUD", "  ", "#Axios"],
+    react: "React"
   },
   {
-    url: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    caption: 'Slide 3'
+    title: "Shopping Cart",
+        desc: "A small store and shopping cart using the fake store api, axios and react-use-cart",
+        url: "https://react-cart-shopping.netlify.app/",
+        img: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        repo: 'https://github.com/StaceyLouis/react-shopping',
+        tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+        react: "React"
   },
   {
-    url:"https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    caption:"Slide 4"
+    title: "Nasa Photo",
+    desc: "A small store and shopping cart using the fake store api, axios and react-use-cart",
+    url: "https://nasa-apods.netlify.app/",
+    img: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    repo: 'https://github.com/StaceyLouis/nasa-apod',
+    tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+    react: "React"
   },
   {
-    url:"https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
-    caption: "Slide 5"
+    title: "Calculator",
+    desc: "A small store and shopping cart using the fake store api, axios and react-use-cart",
+    url: "https://calc-apps.netlify.app/",
+    img: "https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
+    repo: 'https://github.com/StaceyLouis/calculator',
+    tech: ["#React", "  ", "#SASS", "  ", "#Axios"],
+    react: "React"
   }
 
 ];
@@ -103,9 +129,14 @@ const MobileProjects = () => {
           <Title text="Projects"/>
          <Fade>
          {slideImages.map((slideImage, index)=> (
-            <div className="each-fade" key={index}>
-              <Frame style={{'backgroundImage': `url(${slideImage.url})`}}>
-                <span>{slideImage.caption}</span>
+            <div className="each-fade mobile-flex" key={index}>
+              <Frame style={{'backgroundImage': `url(${slideImage.img})`}}>
+                <div className="overlay">
+                <span>{slideImage.title}</span>
+                <p>{slideImage.desc}</p>
+                <h4>{slideImage.tech}</h4>
+                <span><a href={slideImage.repo} target="_blank"><FontAwesomeIcon icon={faGithubAlt} className="icon"/></a><a href={slideImage.url} target="_blank"><FontAwesomeIcon icon={faUpRightFromSquare} className="icon icon1"/></a></span>
+                </div>
               </Frame>
             </div>
           ))} 

@@ -76,12 +76,30 @@ align-items: center;
   
 }
 .overlay{
-  width: 8rem;
-  height: 7rem;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  margin-left: 1.2rem;
+  background-color: rgba(8, 8, 8, 0.83);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  span{
+    font-size: 3rem;
+    color: aqua;
+  }
+
+  .icon{
+    color: #f8d2c9;
+    font-size: 1.5rem;
+    margin: 0.8rem;
+  }
 }
-h2{
+h4{
   text-align: left;
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0.8rem 0;
 }
+
+
 }
