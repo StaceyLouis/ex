@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Sidebar from 'react-sidebar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faAddressCard, faHome, faUserNinja, faBarsProgress, faBars} from '@fortawesome/free-solid-svg-icons'
+import {faAddressCard, faHome, faUserNinja, faBarsProgress, faBars,faFileDownload} from '@fortawesome/free-solid-svg-icons'
 
 
 const Div = styled.div`
@@ -25,6 +25,23 @@ const Div = styled.div`
   }
 
 `
+const Button = styled.button`
+    display: block;
+    background-color: var(--bg);
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    margin-top: 8rem;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 0.5rem;
+    font-family: var(--font);
+    &:hover{
+        background-color: var(--accent-color);
+        color: #fff;
+        border: 1px solid var(--accent-color);
+    }
+
+`
 
 const MobileNav = () => {
   const [sideBar, setSideBar] = useState(false)
@@ -40,6 +57,7 @@ const MobileNav = () => {
     <Link to="/about" ><FontAwesomeIcon icon={faUserNinja} /> About</Link>
     <Link to="/projects"><FontAwesomeIcon icon={faBarsProgress}/> Projects</Link>
     <Link to='/contact' ><FontAwesomeIcon icon={faAddressCard} /> Contact</Link>
+    <Button><FontAwesomeIcon icon={faFileDownload}/> Resume</Button>
      </Div>
     
     }

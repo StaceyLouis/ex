@@ -28,18 +28,18 @@ export const Flex = styled.div`
 export const Sect = styled.p`
     color: #ccc;
     width: 89%;
-    font-size: 1rem;
+    font-size: 1.7rem;
     text-align: left;
 `
 const H3 = styled.h3`
     color: var(--orange);
     font-family: var(--font);
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: left;
 `
 const H1 = styled.h1`
     color: var(--accent-color);
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 2rem;
 
 `
@@ -48,7 +48,7 @@ const H2= styled.h2`
     font-size: 1.5rem;
     font-weight: 500;
     text-align: left;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
    
 `
 const TEXTS = [
